@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: mysecretpassword
+
+openweather:
+  url: http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={appid}
+  api-key: c2d7b819c4b6fc217892d1111ec1acf3

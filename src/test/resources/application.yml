@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
+
+openweather:
+  url: http://localhost:8080/data/2.5/weather?q={city}&APPID={appid}
+  api-key: anApi
+
