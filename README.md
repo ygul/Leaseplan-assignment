@@ -8,6 +8,9 @@ Step three go to url http://localhost:8080/weather?city=amsterdam
 
 Change query parameter city, to see results for other cities.
 
+#### Swagger documentation 
+When running locally go to url: http://localhost:8080/swagger-ui.html
+
 ### Running unit tests
 mvn clean verify
 
