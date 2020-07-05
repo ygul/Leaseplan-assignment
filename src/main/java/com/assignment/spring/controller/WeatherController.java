@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Objects;
-
 @RestController
 public class WeatherController {
 
@@ -21,12 +19,7 @@ public class WeatherController {
 
     @GetMapping("/weather")
     public ResponseEntity<WeatherEntity> weather(@RequestParam String city) {
-        if (Objects.isNull(city)) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        }
-
         WeatherEntity weatherEntity = weatherService.getWeather(city);
-
         return ResponseEntity.status(HttpStatus.OK).body(weatherEntity);
     }
 }
