@@ -18,7 +18,7 @@
     <properties>
         <java.version>11</java.version>
         <lombok.version>1.18.12</lombok.version>
-        <postgresql.version>42.2.14</postgresql.version>
+        <postgresql.version>42.2.25</postgresql.version>
         <h2.version>1.4.200</h2.version>
         <wiremock.version>2.26.3</wiremock.version>
         <swagger.version>2.9.2</swagger.version>
